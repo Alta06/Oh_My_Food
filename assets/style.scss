@@ -1,0 +1,141 @@
+$clrTitle:#FCCA46;
+$clrBg: #579C87;
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    background-color: $clrBg;
+    color: $clrTitle;
+    margin: 0;
+    font-size: 4em;
+}
+
+.container, .carte {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex: 1 0 auto;
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: $clrTitle;
+}
+
+.content a {
+    font-size: 30px;
+}
+
+.incoming a {
+    font-size: 1.6em;
+}
+
+footer a {
+    font-size: 1.5em;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 450px;
+    justify-content: center;
+    margin: 0 40px 40px 0;
+    box-shadow: rgb(224, 224, 224) 0px 0px 10px 1px;
+}
+
+.menuTop {
+    display: flex;
+}
+
+.menuBot {
+    display: flex;
+}
+
+.menuNote {
+    background-color: #FCDFDB;
+}
+
+.menuChic {
+    background-color: #FFF5FE;
+}
+
+.menuDelice {
+    background-color: #F9F9F9;
+}
+
+.menuPalette {
+    background-color: #FDFFFD;
+}
+
+.carte .menuNote {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    flex: 1 ;
+    width: 700px;
+    margin-bottom: 30px;
+}
+
+.carte h2 {
+    font-size: 36px;
+}
+
+.carte h3 {
+    margin-top: 100px;
+    font-size: 28px;
+}
+
+.carte h4 {
+    font-size: 20px;
+}
+
+.carte h5 {
+    font-size: 24px;
+}
+
+.puceInfos {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 40px;
+    line-height: 200%;
+}
+
+.incoming {
+    font-size: 24px;
+    color: $clrTitle;
+    display: flex;
+    background-color: $clrBg;
+    width: 350px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+footer {
+    flex-shrink: 0;
+    padding: 20px;
+    background-color: $clrBg;
+    display: flex;
+    justify-content: space-between;
+}
