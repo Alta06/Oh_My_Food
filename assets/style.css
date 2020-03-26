@@ -1,4 +1,5 @@
 body {
+  font-family: 'Robot', sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -69,12 +70,110 @@ a {
   font-size: 30px;
 }
 
-.incoming a {
-  font-size: 1.6em;
-}
-
 footer a {
   font-size: 1.5em;
+  padding: 0 25px;
+}
+
+footer a:hover {
+  -webkit-animation: wiggle 0.5s;
+          animation: wiggle 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes wiggle {
+  0% {
+    -webkit-transform: translate(1px, 1px) rotate(0deg);
+            transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+            transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    -webkit-transform: translate(-3px, 0px) rotate(1deg);
+            transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    -webkit-transform: translate(3px, 2px) rotate(0deg);
+            transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(1deg);
+            transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+            transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    -webkit-transform: translate(-3px, 1px) rotate(0deg);
+            transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    -webkit-transform: translate(3px, 1px) rotate(-1deg);
+            transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(1deg);
+            transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    -webkit-transform: translate(1px, 2px) rotate(0deg);
+            transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(1px, -2px) rotate(-1deg);
+            transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    -webkit-transform: translate(1px, 1px) rotate(0deg);
+            transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+            transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    -webkit-transform: translate(-3px, 0px) rotate(1deg);
+            transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    -webkit-transform: translate(3px, 2px) rotate(0deg);
+            transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(1deg);
+            transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+            transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    -webkit-transform: translate(-3px, 1px) rotate(0deg);
+            transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    -webkit-transform: translate(3px, 1px) rotate(-1deg);
+            transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(1deg);
+            transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    -webkit-transform: translate(1px, 2px) rotate(0deg);
+            transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(1px, -2px) rotate(-1deg);
+            transform: translate(1px, -2px) rotate(-1deg);
+  }
 }
 
 .menu {
@@ -109,18 +208,95 @@ footer a {
 
 .menuNote {
   background-color: #FCDFDB;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.3em;
+  -webkit-box-shadow: #e0e0e0 0px 0px 10px 1px;
+          box-shadow: #e0e0e0 0px 0px 10px 1px;
+}
+
+.menuNote a {
+  color: #423121;
+}
+
+.menuNote h2, h3 {
+  color: #423121;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.fas {
+  font-size: 1.5em;
+  background: -webkit-gradient(linear, left top, right top, from(red), to(#ff9900));
+  background: linear-gradient(to right, red 0%, #ff9900 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 .fas {
+  font-size: 1em;
+}
+
+h5 .fas {
+  font-size: 1em;
+  margin-right: 10px;
+  background: -webkit-gradient(linear, left top, right top, from(red), to(#ff9900));
+  background: linear-gradient(to right, red 0%, #ff9900 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .menuChic {
-  background-color: #FFF5FE;
+  background-color: #f8e4f6;
+  font-family: 'Handlee', cursive;
+  font-size: 1.3em;
+  -webkit-box-shadow: #e0e0e0 0px 0px 10px 1px;
+          box-shadow: #e0e0e0 0px 0px 10px 1px;
+  color: #413c37;
+}
+
+.menuChic h2 {
+  background: -webkit-gradient(linear, left top, right top, color-stop(40%, #554f47), color-stop(60%, #4f0566));
+  background: linear-gradient(to right, #554f47 40%, #4f0566 60%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menuChic a {
+  color: #413c37;
 }
 
 .menuDelice {
   background-color: #F9F9F9;
+  font-family: 'Cinzel', serif;
+  font-size: 1em;
+  -webkit-box-shadow: #e0e0e0 0px 0px 10px 1px;
+          box-shadow: #e0e0e0 0px 0px 10px 1px;
+}
+
+.menuDelice h2 {
+  background: -webkit-gradient(linear, left top, right top, from(#0046af), to(#4c85ff));
+  background: linear-gradient(to right, #0046af 0%, #4c85ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .menuPalette {
   background-color: #FDFFFD;
+  font-size: 1.3em;
+  -webkit-box-shadow: #e0e0e0 0px 0px 10px 1px;
+          box-shadow: #e0e0e0 0px 0px 10px 1px;
+}
+
+.menuPalette h2 {
+  background: -webkit-gradient(linear, left top, right top, from(#076b2d), to(#00ff00));
+  background: linear-gradient(to right, #076b2d 0%, #00ff00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .carte .menuNote {
@@ -139,21 +315,70 @@ footer a {
   margin-bottom: 30px;
 }
 
+.carte .menuPalette {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 700px;
+  margin-bottom: 30px;
+}
+
+.carte .menuChic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 700px;
+  margin-bottom: 30px;
+}
+
+.carte .menuDelice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 700px;
+  margin-bottom: 30px;
+}
+
 .carte h2 {
-  font-size: 36px;
+  font-size: 2em;
 }
 
 .carte h3 {
   margin-top: 100px;
-  font-size: 28px;
+  font-size: 2em;
 }
 
 .carte h4 {
-  font-size: 20px;
+  font-size: 1.1em;
+  height: 50px;
 }
 
 .carte h5 {
-  font-size: 24px;
+  font-size: 1.2em;
 }
 
 .puceInfos {
@@ -168,7 +393,7 @@ footer a {
 }
 
 .incoming {
-  font-size: 24px;
+  font-size: 2.5em;
   color: #FCCA46;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -186,15 +411,209 @@ footer a {
 }
 
 footer {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  padding: 20px;
+  width: 100%;
+  padding: 20px 20px 20px 0;
   background-color: #579C87;
+  background-attachment: scroll;
+  background-position: 0% 0%;
+  position: fixed;
+  bottom: 0pt;
+  left: 0pt;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.spinner {
+  margin: 100px auto 0;
+  width: 70px;
+  text-align: center;
+}
+
+.spinner > div {
+  width: 18px;
+  height: 18px;
+  background-color: #333;
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes sk-bouncedelay {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.menuNote .entrees {
+  text-align: center;
+}
+
+.menuNote .entrees span {
+  display: inline-block;
+  position: relative;
+}
+
+.menuNote .entrees span:before,
+.menuNote .entrees span:after {
+  content: "";
+  position: absolute;
+  height: 0px;
+  border: 2px solid black;
+  top: 0;
+  width: 380%;
+}
+
+.menuNote .entrees span:before {
+  right: 100%;
+  margin-right: 50px;
+  margin-top: 13px;
+  border: solid 3px black;
+  -webkit-box-shadow: 20px 38px 34px -26px black;
+          box-shadow: 20px 38px 34px -26px black;
+  border-radius: 30% 40% 80% 90%;
+}
+
+.menuNote .entrees span:after {
+  left: 100%;
+  margin-left: 50px;
+  margin-top: 13px;
+  border: solid 3px black;
+  -webkit-box-shadow: 20px 38px 34px -26px black;
+          box-shadow: 20px 38px 34px -26px black;
+  border-radius: 40% 50% 10% 40%;
+}
+
+.menuNote .plats {
+  text-align: center;
+}
+
+.menuNote .plats span {
+  display: inline-block;
+  position: relative;
+}
+
+.menuNote .plats span:before,
+.menuNote .plats span:after {
+  content: "";
+  position: absolute;
+  height: 0px;
+  border: 2px solid #41403E;
+  -webkit-box-shadow: 0px 1px 5px  black;
+          box-shadow: 0px 1px 5px  black;
+  top: 0;
+  width: 200%;
+}
+
+.menuNote .plats span:before {
+  right: 100%;
+  margin-right: 50px;
+  margin-top: 13px;
+  border: solid 3px black;
+  -webkit-box-shadow: 20px 38px 34px -26px black;
+          box-shadow: 20px 38px 34px -26px black;
+  border-radius: 30% 40% 80% 40%;
+}
+
+.menuNote .plats span:after {
+  left: 100%;
+  margin-left: 50px;
+  margin-top: 13px;
+  border: solid 3px black;
+  -webkit-box-shadow: 20px 38px 34px -26px black;
+          box-shadow: 20px 38px 34px -26px black;
+  border-radius: 40% 50% 10% 40%;
+}
+
+.menuNote .desserts {
+  text-align: center;
+}
+
+.menuNote .desserts span {
+  display: inline-block;
+  position: relative;
+}
+
+.menuNote .desserts span:before,
+.menuNote .desserts span:after {
+  content: "";
+  position: absolute;
+  height: 0px;
+  border: 2px solid black;
+  -webkit-box-shadow: 0px 1px 5px  black;
+          box-shadow: 0px 1px 5px  black;
+  top: 0;
+  width: 150%;
+}
+
+.menuNote .desserts span:before {
+  right: 100%;
+  margin-right: 50px;
+  margin-top: 13px;
+  border: solid 3px black;
+  -webkit-box-shadow: 20px 38px 34px -26px black;
+          box-shadow: 20px 38px 34px -26px black;
+  border-radius: 30% 40% 80% 40%;
+}
+
+.menuNote .desserts span:after {
+  left: 100%;
+  margin-left: 50px;
+  margin-top: 13px;
+  border: solid 3px black;
+  -webkit-box-shadow: 20px 38px 34px -26px black;
+          box-shadow: 20px 38px 34px -26px black;
+  border-radius: 40% 50% 10% 40%;
+}
+
+.title {
+  width: 200px;
+  margin: auto;
+}
+
+.carte h4:after {
+  content: '';
+  display: block;
+  border-bottom: 3px solid black;
+  -webkit-box-shadow: 20px 38px 34px -26px black;
+          box-shadow: 20px 38px 34px -26px black;
+  border-radius: 80% 10% 90% 40%;
+  width: 0;
+  position: relative;
+  left: 50px;
+  -webkit-transition: 700ms ease-in-out;
+  transition: 700ms ease-in-out;
+}
+
+.carte h4:hover:after {
+  width: 100px;
 }
 /*# sourceMappingURL=style.css.map */
