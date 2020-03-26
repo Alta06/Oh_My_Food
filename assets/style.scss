@@ -1,27 +1,28 @@
-$clrTitle:#FCCA46;
-$clrBg: #579C87;
-
 body {
     font-family: 'Robot', sans-serif;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+    height: 100%;
     margin: 0;
     padding: 0;
 }
 
-h1 {
-    display: flex;
-    height: 100px;
-    justify-content: center;
-    align-items: center;
+$clrTitle:#FCCA46;
+$clrBg: #579C87;
+
+header {
+    width: 100%;
     background-color: $clrBg;
+    text-align: center;
     color: $clrTitle;
-    margin: 0;
-    font-size: 4em;
+    font-size: 2em;
 }
 
-.container, .carte {
+h1 {
+    margin: 0;
+}
+
+.container {
+    height: 100%;
+    margin: auto;
     flex-direction: column;
     text-align: center;
     align-items: center;
@@ -31,10 +32,21 @@ h1 {
     padding: 20px;
 }
 
+.carte {
+    margin: auto;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
 .content {
+    width: 70%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 25px;
 }
 
 a {
@@ -55,21 +67,51 @@ footer a:hover {
     animation: wiggle 0.5s;
     animation-iteration-count: infinite;
 
+    @keyframes wiggle {
+        0% {
+            transform: translate(1px, 1px) rotate(0deg);
+        }
 
+        10% {
+            transform: translate(-1px, -2px) rotate(-1deg);
+        }
 
-@keyframes wiggle {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
-}
+        20% {
+            transform: translate(-3px, 0px) rotate(1deg);
+        }
+
+        30% {
+            transform: translate(3px, 2px) rotate(0deg);
+        }
+
+        40% {
+            transform: translate(1px, -1px) rotate(1deg);
+        }
+
+        50% {
+            transform: translate(-1px, 2px) rotate(-1deg);
+        }
+
+        60% {
+            transform: translate(-3px, 1px) rotate(0deg);
+        }
+
+        70% {
+            transform: translate(3px, 1px) rotate(-1deg);
+        }
+
+        80% {
+            transform: translate(-1px, -1px) rotate(1deg);
+        }
+
+        90% {
+            transform: translate(1px, 2px) rotate(0deg);
+        }
+
+        100% {
+            transform: translate(1px, -2px) rotate(-1deg);
+        }
+    }
 
 }
 
@@ -77,7 +119,7 @@ footer a:hover {
     display: flex;
     flex-direction: column;
     width: 350px;
-    height: 450px;
+    min-height: 450px;
     justify-content: center;
     margin: 0 40px 40px 0;
     box-shadow: rgb(224, 224, 224) 0px 0px 10px 1px;
@@ -102,7 +144,8 @@ footer a:hover {
     color: rgb(66, 49, 33);
 }
 
-.menuNote h2, h3 {
+.menuNote h2,
+h3 {
     color: rgb(66, 49, 33);
     display: flex;
     flex-direction: column;
@@ -112,7 +155,7 @@ footer a:hover {
     font-size: 1.5em;
     background: linear-gradient(to right, rgb(255, 0, 0) 0%, #ff9900 100%);
     -webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
 }
 
 h2 .fas {
@@ -124,7 +167,7 @@ h5 .fas {
     margin-right: 10px;
     background: linear-gradient(to right, rgb(255, 0, 0) 0%, #ff9900 100%);
     -webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
 }
 
 .menuChic {
@@ -138,7 +181,7 @@ h5 .fas {
 .menuChic h2 {
     background: linear-gradient(to right, rgb(85, 79, 71) 40%, #4f0566 60%);
     -webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
 }
 
 .menuChic a {
@@ -155,7 +198,7 @@ h5 .fas {
 .menuDelice h2 {
     background: linear-gradient(to right, rgb(0, 70, 175) 0%, #4c85ff 100%);
     -webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
 }
 
 .menuPalette {
@@ -167,41 +210,41 @@ h5 .fas {
 .menuPalette h2 {
     background: linear-gradient(to right, rgb(7, 107, 45) 0%, #00ff00 100%);
     -webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
 }
 
-.carte .menuNote {
+.carte .carteNote {
     display: flex;
     flex-direction: column;
     margin: 0;
-    flex: 1 ;
+    flex: 1;
     width: 700px;
     margin-bottom: 30px;
 }
 
-.carte .menuPalette {
+.carte .cartePalette {
     display: flex;
     flex-direction: column;
     margin: 0;
-    flex: 1 ;
+    flex: 1;
     width: 700px;
     margin-bottom: 30px;
 }
 
-.carte .menuChic {
+.carte .carteChic {
     display: flex;
     flex-direction: column;
     margin: 0;
-    flex: 1 ;
+    flex: 1;
     width: 700px;
     margin-bottom: 30px;
 }
 
-.carte .menuDelice {
+.carte .carteDelice {
     display: flex;
     flex-direction: column;
     margin: 0;
-    flex: 1 ;
+    flex: 1;
     width: 700px;
     margin-bottom: 30px;
 }
@@ -217,7 +260,6 @@ h5 .fas {
 
 .carte h4 {
     font-size: 1.1em;
-    height: 50px;
 }
 
 .carte h5 {
@@ -237,7 +279,6 @@ h5 .fas {
     display: flex;
     background-color: $clrBg;
     width: 350px;
-    height: 60px;
     justify-content: center;
     align-items: center;
     border-radius: 15px;
@@ -256,154 +297,176 @@ footer {
     justify-content: space-between;
 }
 
-
 .spinner {
-    margin: 100px auto 0;
     width: 70px;
     text-align: center;
-  }
-  
-  .spinner > div {
-    width: 18px;
-    height: 18px;
+}
+
+.spinner>div {
+    width: 15px;
+    height: 15px;
     background-color: #333;
-  
+
     border-radius: 100%;
     display: inline-block;
     -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
     animation: sk-bouncedelay 1.4s infinite ease-in-out both;
-  }
-  
-  .spinner .bounce1 {
+}
+
+.spinner .bounce1 {
     -webkit-animation-delay: -0.32s;
     animation-delay: -0.32s;
-  }
-  
-  .spinner .bounce2 {
+}
+
+.spinner .bounce2 {
     -webkit-animation-delay: -0.16s;
     animation-delay: -0.16s;
-  }
-  
-  @-webkit-keyframes sk-bouncedelay {
-    0%, 80%, 100% { -webkit-transform: scale(0) }
-    40% { -webkit-transform: scale(1.0) }
-  }
-  
-  @keyframes sk-bouncedelay {
-    0%, 80%, 100% { 
-      -webkit-transform: scale(0);
-      transform: scale(0);
-    } 40% { 
-      -webkit-transform: scale(1.0);
-      transform: scale(1.0);
-    }
-  }
+}
 
-  .menuNote .entrees {
+@-webkit-keyframes sk-bouncedelay {
+
+    0%,
+    80%,
+    100% {
+        -webkit-transform: scale(0)
+    }
+
+    40% {
+        -webkit-transform: scale(1.0)
+    }
+}
+
+@keyframes sk-bouncedelay {
+
+    0%,
+    80%,
+    100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+    40% {
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+    }
+}
+
+.menuNote .entrees {
     text-align: center;
-  }
-  .menuNote .entrees span {
+}
+
+.menuNote .entrees span {
     display: inline-block;
-    position: relative;  
-  }
-  .menuNote .entrees span:before,
-  .menuNote .entrees span:after {
+    position: relative;
+}
+
+.menuNote .entrees span:before,
+.menuNote .entrees span:after {
     content: "";
     position: absolute;
     height: 0px;
     border: 2px solid rgb(0, 0, 0);
     top: 0;
-    width: 380%;
-    
-  }
-  .menuNote .entrees span:before {
+    width: 255%;
+}
+
+.menuNote .entrees span:before {
     right: 100%;
     margin-right: 50px;
     margin-top: 13px;
-    border:solid 3px rgb(0, 0, 0);
+    border: solid 3px rgb(0, 0, 0);
     box-shadow: 20px 38px 34px -26px rgb(0, 0, 0);
-      border-radius: 30% 40% 80% 90% ;
-    
-  }
-  .menuNote .entrees span:after {
+    border-radius: 30% 40% 80% 90%;
+
+}
+
+.menuNote .entrees span:after {
     left: 100%;
     margin-left: 50px;
     margin-top: 13px;
 
-    border:solid 3px rgb(0, 0, 0);
+    border: solid 3px rgb(0, 0, 0);
     box-shadow: 20px 38px 34px -26px rgb(0, 0, 0);
-      border-radius: 40% 50% 10% 40%;
-    
-  }
+    border-radius: 40% 50% 10% 40%;
 
-  .menuNote .plats {
+}
+
+.menuNote .plats {
     text-align: center;
-  }
-  .menuNote .plats span {
+}
+
+.menuNote .plats span {
     display: inline-block;
-    position: relative;  
-  }
-  .menuNote .plats span:before,
-  .menuNote .plats span:after {
+    position: relative;
+}
+
+.menuNote .plats span:before,
+.menuNote .plats span:after {
     content: "";
     position: absolute;
     height: 0px;
     border: 2px solid #41403E;
-    box-shadow: 0px 1px 5px  black;
+    box-shadow: 0px 1px 5px black;
     top: 0;
-    width: 200%;
-  }
-  .menuNote .plats span:before {
+    width: 150%;
+}
+
+.menuNote .plats span:before {
     right: 100%;
     margin-right: 50px;
     margin-top: 13px;
 
-    border:solid 3px rgb(0, 0, 0);
+    border: solid 3px rgb(0, 0, 0);
     box-shadow: 20px 38px 34px -26px rgb(0, 0, 0);
-      border-radius: 30% 40% 80% 40% ;
-  }
-  .menuNote .plats span:after {
+    border-radius: 30% 40% 80% 40%;
+}
+
+.menuNote .plats span:after {
     left: 100%;
     margin-left: 50px;
     margin-top: 13px;
 
-    border:solid 3px rgb(0, 0, 0);
+    border: solid 3px rgb(0, 0, 0);
     box-shadow: 20px 38px 34px -26px rgb(0, 0, 0);
     border-radius: 40% 50% 10% 40%;
 }
 
-  .menuNote .desserts {
+.menuNote .desserts {
     text-align: center;
-  }
-  .menuNote .desserts span {
+}
+
+.menuNote .desserts span {
     display: inline-block;
-    position: relative;  
-  }
-  .menuNote .desserts span:before,
-  .menuNote .desserts span:after {
+    position: relative;
+}
+
+.menuNote .desserts span:before,
+.menuNote .desserts span:after {
     content: "";
     position: absolute;
     height: 0px;
     border: 2px solid rgb(0, 0, 0);
-    box-shadow: 0px 1px 5px  black;
+    box-shadow: 0px 1px 5px black;
     top: 0;
-    width: 150%;
-  }
-  .menuNote .desserts span:before {
+    width: 100%;
+}
+
+.menuNote .desserts span:before {
     right: 100%;
     margin-right: 50px;
     margin-top: 13px;
 
-    border:solid 3px rgb(0, 0, 0);
+    border: solid 3px rgb(0, 0, 0);
     box-shadow: 20px 38px 34px -26px rgb(0, 0, 0);
-      border-radius: 30% 40% 80% 40% ;
-  }
-  .menuNote .desserts span:after {
+    border-radius: 30% 40% 80% 40%;
+}
+
+.menuNote .desserts span:after {
     left: 100%;
     margin-left: 50px;
     margin-top: 13px;
 
-    border:solid 3px rgb(0, 0, 0);
+    border: solid 3px rgb(0, 0, 0);
     box-shadow: 20px 38px 34px -26px rgb(0, 0, 0);
     border-radius: 40% 50% 10% 40%;
 }
@@ -423,9 +486,58 @@ footer {
     position: relative;
     left: 50px;
     transition: 700ms ease-in-out;
-  }
+}
 
-  .carte h4:hover:after {
-      width: 100px;
-  }
+.carte h4:hover:after {
+    width: 100px;
+}
 
+@media all and (max-width: 768px) {
+
+    .carte h3 {
+        margin-top: 20px;
+    }
+
+    .menuTop,
+    .menuBot {
+        flex-direction: column;
+    }
+
+    .menu {
+        margin: 0 0 20px 0;
+    }
+
+    .menuNote .entrees span:before,
+.menuNote .entrees span:after {
+    content: "";
+    position: absolute;
+    height: 0px;
+    border: 2px solid rgb(0, 0, 0);
+    top: 0;
+    width: 100%;
+
+}
+
+.menuNote .plats span:before,
+.menuNote .plats span:after {
+    content: "";
+    position: absolute;
+    height: 0px;
+    border: 2px solid rgb(0, 0, 0);
+    top: 0;
+    width: 50%;
+
+}
+
+.menuNote .desserts span:before,
+.menuNote .desserts span:after {
+    content: "";
+    position: absolute;
+    height: 0px;
+    border: 2px solid rgb(0, 0, 0);
+    top: 0;
+    width: 30%;
+}
+  
+
+}

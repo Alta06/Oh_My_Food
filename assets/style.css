@@ -1,35 +1,25 @@
 body {
   font-family: 'Robot', sans-serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 100vh;
+  height: 100%;
   margin: 0;
   padding: 0;
 }
 
-h1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+header {
+  width: 100%;
   background-color: #579C87;
+  text-align: center;
   color: #FCCA46;
-  margin: 0;
-  font-size: 4em;
+  font-size: 2em;
 }
 
-.container, .carte {
+h1 {
+  margin: 0;
+}
+
+.container {
+  height: 100%;
+  margin: auto;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -50,7 +40,26 @@ h1 {
   padding: 20px;
 }
 
+.carte {
+  margin: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .content {
+  width: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -59,6 +68,7 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 25px;
 }
 
 a {
@@ -185,7 +195,7 @@ footer a:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 350px;
-  height: 450px;
+  min-height: 450px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -218,7 +228,8 @@ footer a:hover {
   color: #423121;
 }
 
-.menuNote h2, h3 {
+.menuNote h2,
+h3 {
   color: #423121;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -299,7 +310,7 @@ h5 .fas {
   -webkit-text-fill-color: transparent;
 }
 
-.carte .menuNote {
+.carte .carteNote {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -315,7 +326,7 @@ h5 .fas {
   margin-bottom: 30px;
 }
 
-.carte .menuPalette {
+.carte .cartePalette {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -331,7 +342,7 @@ h5 .fas {
   margin-bottom: 30px;
 }
 
-.carte .menuChic {
+.carte .carteChic {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -347,7 +358,7 @@ h5 .fas {
   margin-bottom: 30px;
 }
 
-.carte .menuDelice {
+.carte .carteDelice {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -374,7 +385,6 @@ h5 .fas {
 
 .carte h4 {
   font-size: 1.1em;
-  height: 50px;
 }
 
 .carte h5 {
@@ -400,7 +410,6 @@ h5 .fas {
   display: flex;
   background-color: #579C87;
   width: 350px;
-  height: 60px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -428,14 +437,13 @@ footer {
 }
 
 .spinner {
-  margin: 100px auto 0;
   width: 70px;
   text-align: center;
 }
 
 .spinner > div {
-  width: 18px;
-  height: 18px;
+  width: 15px;
+  height: 15px;
   background-color: #333;
   border-radius: 100%;
   display: inline-block;
@@ -454,7 +462,9 @@ footer {
 }
 
 @-webkit-keyframes sk-bouncedelay {
-  0%, 80%, 100% {
+  0%,
+  80%,
+  100% {
     -webkit-transform: scale(0);
   }
   40% {
@@ -463,7 +473,9 @@ footer {
 }
 
 @keyframes sk-bouncedelay {
-  0%, 80%, 100% {
+  0%,
+  80%,
+  100% {
     -webkit-transform: scale(0);
     transform: scale(0);
   }
@@ -489,7 +501,7 @@ footer {
   height: 0px;
   border: 2px solid black;
   top: 0;
-  width: 380%;
+  width: 255%;
 }
 
 .menuNote .entrees span:before {
@@ -527,10 +539,10 @@ footer {
   position: absolute;
   height: 0px;
   border: 2px solid #41403E;
-  -webkit-box-shadow: 0px 1px 5px  black;
-          box-shadow: 0px 1px 5px  black;
+  -webkit-box-shadow: 0px 1px 5px black;
+          box-shadow: 0px 1px 5px black;
   top: 0;
-  width: 200%;
+  width: 150%;
 }
 
 .menuNote .plats span:before {
@@ -568,10 +580,10 @@ footer {
   position: absolute;
   height: 0px;
   border: 2px solid black;
-  -webkit-box-shadow: 0px 1px 5px  black;
-          box-shadow: 0px 1px 5px  black;
+  -webkit-box-shadow: 0px 1px 5px black;
+          box-shadow: 0px 1px 5px black;
   top: 0;
-  width: 150%;
+  width: 100%;
 }
 
 .menuNote .desserts span:before {
@@ -615,5 +627,48 @@ footer {
 
 .carte h4:hover:after {
   width: 100px;
+}
+
+@media all and (max-width: 768px) {
+  .carte h3 {
+    margin-top: 20px;
+  }
+  .menuTop,
+  .menuBot {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu {
+    margin: 0 0 20px 0;
+  }
+  .menuNote .entrees span:before,
+  .menuNote .entrees span:after {
+    content: "";
+    position: absolute;
+    height: 0px;
+    border: 2px solid black;
+    top: 0;
+    width: 100%;
+  }
+  .menuNote .plats span:before,
+  .menuNote .plats span:after {
+    content: "";
+    position: absolute;
+    height: 0px;
+    border: 2px solid black;
+    top: 0;
+    width: 50%;
+  }
+  .menuNote .desserts span:before,
+  .menuNote .desserts span:after {
+    content: "";
+    position: absolute;
+    height: 0px;
+    border: 2px solid black;
+    top: 0;
+    width: 30%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
