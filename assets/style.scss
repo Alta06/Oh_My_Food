@@ -9,7 +9,6 @@ $clrTitle:#FCCA46;
 $clrBg: #579C87;
 
 header {
-    width: 100%;
     background-color: $clrBg;
     text-align: center;
     color: $clrTitle;
@@ -55,7 +54,7 @@ a {
 }
 
 .content a {
-    font-size: 30px;
+    font-size: 1em;
 }
 
 footer a {
@@ -190,8 +189,8 @@ h5 .fas {
 
 .menuDelice {
     background-color: #F9F9F9;
-    font-family: 'Cinzel', serif;
-    font-size: 1em;
+    font-family: 'Gotu', sans-serif;
+    font-size: 1.3em;
     box-shadow: rgb(224, 224, 224) 0px 0px 10px 1px;
 }
 
@@ -199,6 +198,10 @@ h5 .fas {
     background: linear-gradient(to right, rgb(0, 70, 175) 0%, #4c85ff 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.menuDelice a {
+    color: rgb(0, 70, 175);
 }
 
 .menuPalette {
@@ -211,6 +214,10 @@ h5 .fas {
     background: linear-gradient(to right, rgb(7, 107, 45) 0%, #00ff00 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.menuPalette a {
+   color: rgb(7, 107, 45);
 }
 
 .carte .carteNote {
@@ -341,13 +348,13 @@ footer {
     0%,
     80%,
     100% {
-        -webkit-transform: scale(0);
-        transform: scale(0);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
     }
 
     40% {
-        -webkit-transform: scale(1.0);
-        transform: scale(1.0);
+        -webkit-transform: translateY(10.0px);
+        transform: translateY(10.0px);
     }
 }
 
@@ -471,6 +478,366 @@ footer {
     border-radius: 40% 50% 10% 40%;
 }
 
+.menuPalette .entrees {
+    text-align: center;
+}
+
+.menuPalette .entrees span {
+    display: inline-block;
+    position: relative;
+}
+
+.menuPalette .entrees span:before,
+.menuPalette .entrees span:after {
+    content: "";
+    position: absolute;
+    height: 0px;
+    border: 2px solid rgb(0, 0, 0);
+    top: 0;
+    width: 255%;
+}
+
+.menuPalette .entrees span:before {
+    right: 100%;
+    margin-right: 50px;
+    margin-top: 13px;
+    border: solid 3px rgb(0, 0, 0);
+    box-shadow: 20px 38px 34px -26px rgb(0, 0, 0);
+    border-radius: 30% 40% 80% 90%;
+
+}
+
+.menuPalette .entrees span:after {
+    left: 100%;
+    margin-left: 50px;
+    margin-top: 13px;
+
+    border: solid 3px rgb(0, 0, 0);
+    box-shadow: 20px 38px 34px -26px rgb(0, 0, 0);
+    border-radius: 40% 50% 10% 40%;
+
+}
+
+.menuPalette .plats {
+    text-align: center;
+}
+
+.menuPalette .plats span {
+    display: inline-block;
+    position: relative;
+}
+
+.menuPalette .plats span:before,
+.menuPalette .plats span:after {
+    content: "";
+    position: absolute;
+    height: 0px;
+    border: 2px solid #41403E;
+    box-shadow: 0px 1px 5px black;
+    top: 0;
+    width: 150%;
+}
+
+.menuPalette .plats span:before {
+    right: 100%;
+    margin-right: 50px;
+    margin-top: 13px;
+
+    border: solid 3px rgb(0, 0, 0);
+    box-shadow: 20px 38px 34px -26px rgb(0, 0, 0);
+    border-radius: 30% 40% 80% 40%;
+}
+
+.menuPalette .plats span:after {
+    left: 100%;
+    margin-left: 50px;
+    margin-top: 13px;
+
+    border: solid 3px rgb(0, 0, 0);
+    box-shadow: 20px 38px 34px -26px rgb(0, 0, 0);
+    border-radius: 40% 50% 10% 40%;
+}
+
+.menuPalette .desserts {
+    text-align: center;
+}
+
+.menuPalette .desserts span {
+    display: inline-block;
+    position: relative;
+}
+
+.menuPalette .desserts span:before,
+.menuPalette .desserts span:after {
+    content: "";
+    position: absolute;
+    height: 0px;
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 0px 1px 5px black;
+    top: 0;
+    width: 100%;
+}
+
+.menuPalette .desserts span:before {
+    right: 100%;
+    margin-right: 50px;
+    margin-top: 13px;
+
+    border: solid 3px rgb(0, 0, 0);
+    box-shadow: 20px 38px 34px -26px rgb(0, 0, 0);
+    border-radius: 30% 40% 80% 40%;
+}
+
+.menuPalette .desserts span:after {
+    left: 100%;
+    margin-left: 50px;
+    margin-top: 13px;
+
+    border: solid 3px rgb(0, 0, 0);
+    box-shadow: 20px 38px 34px -26px rgb(0, 0, 0);
+    border-radius: 40% 50% 10% 40%;
+}
+
+.menuChic .entrees {
+    text-align: center;
+}
+
+.menuChic .entrees span {
+    display: inline-block;
+    position: relative;
+}
+
+.menuChic .entrees span:before,
+.menuChic .entrees span:after {
+    content: "";
+    position: absolute;
+    height: 0px;
+    border: 2px solid rgb(0, 0, 0);
+    top: 0;
+    width: 255%;
+}
+
+.menuChic .entrees span:before {
+    right: 100%;
+    margin-right: 50px;
+    margin-top: 13px;
+    border: solid 3px rgb(0, 0, 0);
+    box-shadow: 20px 38px 34px -26px rgb(0, 0, 0);
+    border-radius: 30% 40% 80% 90%;
+
+}
+
+.menuChic .entrees span:after {
+    left: 100%;
+    margin-left: 50px;
+    margin-top: 13px;
+
+    border: solid 3px rgb(0, 0, 0);
+    box-shadow: 20px 38px 34px -26px rgb(0, 0, 0);
+    border-radius: 40% 50% 10% 40%;
+
+}
+
+.menuChic .plats {
+    text-align: center;
+}
+
+.menuChic .plats span {
+    display: inline-block;
+    position: relative;
+}
+
+.menuChic .plats span:before,
+.menuChic .plats span:after {
+    content: "";
+    position: absolute;
+    height: 0px;
+    border: 2px solid #41403E;
+    box-shadow: 0px 1px 5px black;
+    top: 0;
+    width: 150%;
+}
+
+.menuChic .plats span:before {
+    right: 100%;
+    margin-right: 50px;
+    margin-top: 13px;
+
+    border: solid 3px rgb(0, 0, 0);
+    box-shadow: 20px 38px 34px -26px rgb(0, 0, 0);
+    border-radius: 30% 40% 80% 40%;
+}
+
+.menuChic .plats span:after {
+    left: 100%;
+    margin-left: 50px;
+    margin-top: 13px;
+
+    border: solid 3px rgb(0, 0, 0);
+    box-shadow: 20px 38px 34px -26px rgb(0, 0, 0);
+    border-radius: 40% 50% 10% 40%;
+}
+
+.menuChic .desserts {
+    text-align: center;
+}
+
+.menuChic .desserts span {
+    display: inline-block;
+    position: relative;
+}
+
+.menuChic .desserts span:before,
+.menuChic .desserts span:after {
+    content: "";
+    position: absolute;
+    height: 0px;
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 0px 1px 5px black;
+    top: 0;
+    width: 100%;
+}
+
+.menuChic .desserts span:before {
+    right: 100%;
+    margin-right: 50px;
+    margin-top: 13px;
+
+    border: solid 3px rgb(0, 0, 0);
+    box-shadow: 20px 38px 34px -26px rgb(0, 0, 0);
+    border-radius: 30% 40% 80% 40%;
+}
+
+.menuChic .desserts span:after {
+    left: 100%;
+    margin-left: 50px;
+    margin-top: 13px;
+
+    border: solid 3px rgb(0, 0, 0);
+    box-shadow: 20px 38px 34px -26px rgb(0, 0, 0);
+    border-radius: 40% 50% 10% 40%;
+}
+
+.menuDelice .entrees {
+    text-align: center;
+}
+
+.menuDelice .entrees span {
+    display: inline-block;
+    position: relative;
+}
+
+.menuDelice .entrees span:before,
+.menuDelice .entrees span:after {
+    content: "";
+    position: absolute;
+    height: 0px;
+    border: 2px solid rgb(0, 0, 0);
+    top: 0;
+    width: 255%;
+}
+
+.menuDelice .entrees span:before {
+    right: 100%;
+    margin-right: 50px;
+    margin-top: 13px;
+    border: solid 3px rgb(0, 0, 0);
+    box-shadow: 20px 38px 34px -26px rgb(0, 0, 0);
+    border-radius: 30% 40% 80% 90%;
+
+}
+
+.menuDelice .entrees span:after {
+    left: 100%;
+    margin-left: 50px;
+    margin-top: 13px;
+
+    border: solid 3px rgb(0, 0, 0);
+    box-shadow: 20px 38px 34px -26px rgb(0, 0, 0);
+    border-radius: 40% 50% 10% 40%;
+
+}
+
+.menuDelice .plats {
+    text-align: center;
+}
+
+.menuDelice .plats span {
+    display: inline-block;
+    position: relative;
+}
+
+.menuDelice .plats span:before,
+.menuDelice .plats span:after {
+    content: "";
+    position: absolute;
+    height: 0px;
+    border: 2px solid #41403E;
+    box-shadow: 0px 1px 5px black;
+    top: 0;
+    width: 150%;
+}
+
+.menuDelice .plats span:before {
+    right: 100%;
+    margin-right: 50px;
+    margin-top: 13px;
+
+    border: solid 3px rgb(0, 0, 0);
+    box-shadow: 20px 38px 34px -26px rgb(0, 0, 0);
+    border-radius: 30% 40% 80% 40%;
+}
+
+.menuDelice .plats span:after {
+    left: 100%;
+    margin-left: 50px;
+    margin-top: 13px;
+
+    border: solid 3px rgb(0, 0, 0);
+    box-shadow: 20px 38px 34px -26px rgb(0, 0, 0);
+    border-radius: 40% 50% 10% 40%;
+}
+
+.menuDelice .desserts {
+    text-align: center;
+}
+
+.menuDelice .desserts span {
+    display: inline-block;
+    position: relative;
+}
+
+.menuDelice .desserts span:before,
+.menuDelice .desserts span:after {
+    content: "";
+    position: absolute;
+    height: 0px;
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 0px 1px 5px black;
+    top: 0;
+    width: 100%;
+}
+
+.menuDelice .desserts span:before {
+    right: 100%;
+    margin-right: 50px;
+    margin-top: 13px;
+
+    border: solid 3px rgb(0, 0, 0);
+    box-shadow: 20px 38px 34px -26px rgb(0, 0, 0);
+    border-radius: 30% 40% 80% 40%;
+}
+
+.menuDelice .desserts span:after {
+    left: 100%;
+    margin-left: 50px;
+    margin-top: 13px;
+
+    border: solid 3px rgb(0, 0, 0);
+    box-shadow: 20px 38px 34px -26px rgb(0, 0, 0);
+    border-radius: 40% 50% 10% 40%;
+}
+
 .title {
     width: 200px;
     margin: auto;
@@ -492,7 +859,7 @@ footer {
     width: 100px;
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 425px) {
 
     .carte h3 {
         margin-top: 20px;
@@ -508,36 +875,143 @@ footer {
     }
 
     .menuNote .entrees span:before,
-.menuNote .entrees span:after {
-    content: "";
-    position: absolute;
-    height: 0px;
-    border: 2px solid rgb(0, 0, 0);
-    top: 0;
-    width: 100%;
+    .menuNote .entrees span:after {
+        content: "";
+        position: absolute;
+        height: 0px;
+        border: 2px solid rgb(0, 0, 0);
+        top: 0;
+        width: 100%;
 
-}
+    }
 
-.menuNote .plats span:before,
-.menuNote .plats span:after {
-    content: "";
-    position: absolute;
-    height: 0px;
-    border: 2px solid rgb(0, 0, 0);
-    top: 0;
-    width: 50%;
+    .menuNote .plats span:before,
+    .menuNote .plats span:after {
+        content: "";
+        position: absolute;
+        height: 0px;
+        border: 2px solid rgb(0, 0, 0);
+        top: 0;
+        width: 50%;
 
-}
+    }
 
-.menuNote .desserts span:before,
-.menuNote .desserts span:after {
-    content: "";
-    position: absolute;
-    height: 0px;
-    border: 2px solid rgb(0, 0, 0);
-    top: 0;
-    width: 30%;
-}
-  
+    .menuNote .desserts span:before,
+    .menuNote .desserts span:after {
+        content: "";
+        position: absolute;
+        height: 0px;
+        border: 2px solid rgb(0, 0, 0);
+        top: 0;
+        width: 30%;
+    }
+
+    .menuPalette .entrees span:before,
+    .menuPalette .entrees span:after {
+        content: "";
+        position: absolute;
+        height: 0px;
+        border: 2px solid rgb(0, 0, 0);
+        top: 0;
+        width: 100%;
+
+    }
+
+    .menuPalette .plats span:before,
+    .menuPalette .plats span:after {
+        content: "";
+        position: absolute;
+        height: 0px;
+        border: 2px solid rgb(0, 0, 0);
+        top: 0;
+        width: 50%;
+
+    }
+
+    .menuPalette .desserts span:before,
+    .menuPalette .desserts span:after {
+        content: "";
+        position: absolute;
+        height: 0px;
+        border: 2px solid rgb(0, 0, 0);
+        top: 0;
+        width: 30%;
+    }
+
+    .menuChic .entrees span:before,
+    .menuChic .entrees span:after {
+        content: "";
+        position: absolute;
+        height: 0px;
+        border: 2px solid rgb(0, 0, 0);
+        top: 0;
+        width: 100%;
+
+    }
+
+    .menuChic .plats span:before,
+    .menuChic .plats span:after {
+        content: "";
+        position: absolute;
+        height: 0px;
+        border: 2px solid rgb(0, 0, 0);
+        top: 0;
+        width: 50%;
+
+    }
+
+    .menuChic .desserts span:before,
+    .menuChic .desserts span:after {
+        content: "";
+        position: absolute;
+        height: 0px;
+        border: 2px solid rgb(0, 0, 0);
+        top: 0;
+        width: 30%;
+    }
+
+    .menuDelice .entrees span:before,
+    .menuDelice .entrees span:after {
+        content: "";
+        position: absolute;
+        height: 0px;
+        border: 2px solid rgb(0, 0, 0);
+        top: 0;
+        width: 100%;
+
+    }
+
+    .menuDelice .plats span:before,
+    .menuDelice .plats span:after {
+        content: "";
+        position: absolute;
+        height: 0px;
+        border: 2px solid rgb(0, 0, 0);
+        top: 0;
+        width: 50%;
+
+    }
+
+    .menuDelice .desserts span:before,
+    .menuDelice .desserts span:after {
+        content: "";
+        position: absolute;
+        height: 0px;
+        border: 2px solid rgb(0, 0, 0);
+        top: 0;
+        width: 30%;
+    }
+
+
+    .prix {
+        margin-left: 10px;
+        justify-content: center;
+        align-self: flex-end;
+    }
+
+    footer {
+        padding: 0;
+    }
+
 
 }
