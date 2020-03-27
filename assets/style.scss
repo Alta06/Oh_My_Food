@@ -1,6 +1,5 @@
 body {
     font-family: 'Robot', sans-serif;
-    height: 100%;
     margin: 0;
     padding: 0;
 }
@@ -13,6 +12,7 @@ header {
     text-align: center;
     color: $clrTitle;
     font-size: 2em;
+    height: 90px;
 }
 
 h1 {
@@ -21,7 +21,7 @@ h1 {
 
 .container {
     height: 100%;
-    margin: auto;
+    margin: 0 0 50px 0;
     flex-direction: column;
     text-align: center;
     align-items: center;
@@ -123,6 +123,12 @@ footer a:hover {
     margin: 0 40px 40px 0;
     box-shadow: rgb(224, 224, 224) 0px 0px 10px 1px;
 }
+
+.menu:hover {
+    transform: scale(1.2,);
+    transition: ease-in-out 500ms;
+}
+
 
 .menuTop {
     display: flex;
@@ -285,7 +291,8 @@ h5 .fas {
     color: $clrTitle;
     display: flex;
     background-color: $clrBg;
-    width: 350px;
+    min-height: 70px;
+    width: 400px;
     justify-content: center;
     align-items: center;
     border-radius: 15px;
@@ -295,11 +302,8 @@ footer {
     width: 100%;
     padding: 20px 20px 20px 0;
     background-color: $clrBg;
-    background-attachment: scroll;
-    background-position: 0% 0%;
     position: fixed;
     bottom: 0pt;
-    left: 0pt;
     display: flex;
     justify-content: space-between;
 }
@@ -321,26 +325,11 @@ footer {
 }
 
 .spinner .bounce1 {
-    -webkit-animation-delay: -0.32s;
     animation-delay: -0.32s;
 }
 
 .spinner .bounce2 {
-    -webkit-animation-delay: -0.16s;
     animation-delay: -0.16s;
-}
-
-@-webkit-keyframes sk-bouncedelay {
-
-    0%,
-    80%,
-    100% {
-        -webkit-transform: scale(0)
-    }
-
-    40% {
-        -webkit-transform: scale(1.0)
-    }
 }
 
 @keyframes sk-bouncedelay {
@@ -348,12 +337,10 @@ footer {
     0%,
     80%,
     100% {
-        -webkit-transform: translateY(0);
         transform: translateY(0);
     }
 
     40% {
-        -webkit-transform: translateY(10.0px);
         transform: translateY(10.0px);
     }
 }
@@ -859,7 +846,7 @@ footer {
     width: 100px;
 }
 
-@media all and (max-width: 425px) {
+@media all and (max-width: 768px) {
 
     .carte h3 {
         margin-top: 20px;
@@ -1009,9 +996,14 @@ footer {
         align-self: flex-end;
     }
 
-    footer {
-        padding: 0;
+@media all and (max-width: 425px){
+
+    .incoming{
+        font-size: 2em;
     }
 
-
+footer {
+    padding: 0;
+}
+}
 }

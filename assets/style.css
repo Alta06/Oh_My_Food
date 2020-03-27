@@ -1,6 +1,5 @@
 body {
   font-family: 'Robot', sans-serif;
-  height: 100%;
   margin: 0;
   padding: 0;
 }
@@ -10,6 +9,7 @@ header {
   text-align: center;
   color: #FCCA46;
   font-size: 2em;
+  height: 90px;
 }
 
 h1 {
@@ -18,7 +18,7 @@ h1 {
 
 .container {
   height: 100%;
-  margin: auto;
+  margin: 0 0 50px 0;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -201,6 +201,13 @@ footer a:hover {
   margin: 0 40px 40px 0;
   -webkit-box-shadow: #e0e0e0 0px 0px 10px 1px;
           box-shadow: #e0e0e0 0px 0px 10px 1px;
+}
+
+.menu:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: ease-in-out 500ms;
+  transition: ease-in-out 500ms;
 }
 
 .menuTop {
@@ -416,7 +423,8 @@ h5 .fas {
   display: -ms-flexbox;
   display: flex;
   background-color: #579C87;
-  width: 350px;
+  min-height: 70px;
+  width: 400px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -430,11 +438,8 @@ footer {
   width: 100%;
   padding: 20px 20px 20px 0;
   background-color: #579C87;
-  background-attachment: scroll;
-  background-position: 0% 0%;
   position: fixed;
   bottom: 0pt;
-  left: 0pt;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -460,22 +465,24 @@ footer {
 
 .spinner .bounce1 {
   -webkit-animation-delay: -0.32s;
-  animation-delay: -0.32s;
+          animation-delay: -0.32s;
 }
 
 .spinner .bounce2 {
   -webkit-animation-delay: -0.16s;
-  animation-delay: -0.16s;
+          animation-delay: -0.16s;
 }
 
 @-webkit-keyframes sk-bouncedelay {
   0%,
   80%,
   100% {
-    -webkit-transform: scale(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
   40% {
-    -webkit-transform: scale(1);
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
   }
 }
 
@@ -484,11 +491,11 @@ footer {
   80%,
   100% {
     -webkit-transform: translateY(0);
-    transform: translateY(0);
+            transform: translateY(0);
   }
   40% {
     -webkit-transform: translateY(10px);
-    transform: translateY(10px);
+            transform: translateY(10px);
   }
 }
 
@@ -999,7 +1006,7 @@ footer {
   width: 100px;
 }
 
-@media all and (max-width: 425px) {
+@media all and (max-width: 768px) {
   .carte h3 {
     margin-top: 20px;
   }
@@ -1128,6 +1135,12 @@ footer {
             justify-content: center;
     -ms-flex-item-align: end;
         align-self: flex-end;
+  }
+}
+
+@media all and (max-width: 768px) and (max-width: 425px) {
+  .incoming {
+    font-size: 2em;
   }
   footer {
     padding: 0;
