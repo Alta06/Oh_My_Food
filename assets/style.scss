@@ -60,58 +60,57 @@ a {
 footer a {
     font-size: 1.5em;
     padding: 0 25px;
-}
 
-footer a:hover {
-    animation: wiggle 0.5s;
-    animation-iteration-count: infinite;
+    &:hover {
+        animation: wiggle 0.5s;
+        animation-iteration-count: infinite;
 
-    @keyframes wiggle {
-        0% {
-            transform: translate(1px, 1px) rotate(0deg);
-        }
+        @keyframes wiggle {
+            0% {
+                transform: translate(1px, 1px) rotate(0deg);
+            }
 
-        10% {
-            transform: translate(-1px, -2px) rotate(-1deg);
-        }
+            10% {
+                transform: translate(-1px, -2px) rotate(-1deg);
+            }
 
-        20% {
-            transform: translate(-3px, 0px) rotate(1deg);
-        }
+            20% {
+                transform: translate(-3px, 0px) rotate(1deg);
+            }
 
-        30% {
-            transform: translate(3px, 2px) rotate(0deg);
-        }
+            30% {
+                transform: translate(3px, 2px) rotate(0deg);
+            }
 
-        40% {
-            transform: translate(1px, -1px) rotate(1deg);
-        }
+            40% {
+                transform: translate(1px, -1px) rotate(1deg);
+            }
 
-        50% {
-            transform: translate(-1px, 2px) rotate(-1deg);
-        }
+            50% {
+                transform: translate(-1px, 2px) rotate(-1deg);
+            }
 
-        60% {
-            transform: translate(-3px, 1px) rotate(0deg);
-        }
+            60% {
+                transform: translate(-3px, 1px) rotate(0deg);
+            }
 
-        70% {
-            transform: translate(3px, 1px) rotate(-1deg);
-        }
+            70% {
+                transform: translate(3px, 1px) rotate(-1deg);
+            }
 
-        80% {
-            transform: translate(-1px, -1px) rotate(1deg);
-        }
+            80% {
+                transform: translate(-1px, -1px) rotate(1deg);
+            }
 
-        90% {
-            transform: translate(1px, 2px) rotate(0deg);
-        }
+            90% {
+                transform: translate(1px, 2px) rotate(0deg);
+            }
 
-        100% {
-            transform: translate(1px, -2px) rotate(-1deg);
+            100% {
+                transform: translate(1px, -2px) rotate(-1deg);
+            }
         }
     }
-
 }
 
 .menu {
@@ -122,18 +121,14 @@ footer a:hover {
     justify-content: center;
     margin: 0 40px 40px 0;
     box-shadow: rgb(224, 224, 224) 0px 0px 10px 1px;
-}
-
-.menu:hover {
-    transform: scale(1.2,);
     transition: ease-in-out 500ms;
+
+    &:hover {
+        transform: scale(1.4, );
+    }
 }
 
-
-.menuTop {
-    display: flex;
-}
-
+.menuTop,
 .menuBot {
     display: flex;
 }
@@ -143,17 +138,17 @@ footer a:hover {
     font-family: 'Dancing Script', cursive;
     font-size: 1.3em;
     box-shadow: rgb(224, 224, 224) 0px 0px 10px 1px;
-}
 
-.menuNote a {
-    color: rgb(66, 49, 33);
-}
+    a {
+        color: rgb(66, 49, 33);
+    }
 
-.menuNote h2,
-h3 {
-    color: rgb(66, 49, 33);
-    display: flex;
-    flex-direction: column;
+    h2,
+    h3 {
+        color: rgb(66, 49, 33);
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .fas {
@@ -181,16 +176,17 @@ h5 .fas {
     font-size: 1.3em;
     box-shadow: rgb(224, 224, 224) 0px 0px 10px 1px;
     color: rgb(65, 60, 55);
-}
 
-.menuChic h2 {
-    background: linear-gradient(to right, rgb(85, 79, 71) 40%, #4f0566 60%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+    h2 {
+        background: linear-gradient(to right, rgb(85, 79, 71) 40%, #4f0566 60%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 
-.menuChic a {
-    color: rgb(65, 60, 55);
+    a {
+        color: rgb(65, 60, 55);
+
+    }
 }
 
 .menuDelice {
@@ -198,85 +194,89 @@ h5 .fas {
     font-family: 'Gotu', sans-serif;
     font-size: 1.3em;
     box-shadow: rgb(224, 224, 224) 0px 0px 10px 1px;
-}
 
-.menuDelice h2 {
-    background: linear-gradient(to right, rgb(0, 70, 175) 0%, #4c85ff 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+    h2 {
+        background: linear-gradient(to right, rgb(0, 70, 175) 0%, #4c85ff 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
 
-.menuDelice a {
-    color: rgb(0, 70, 175);
+        a {
+            color: rgb(0, 70, 175);
+        }
+    }
 }
 
 .menuPalette {
     background-color: #FDFFFD;
     font-size: 1.3em;
     box-shadow: rgb(224, 224, 224) 0px 0px 10px 1px;
+
+    h2 {
+        background: linear-gradient(to right, rgb(7, 107, 45) 0%, #00ff00 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    a {
+        color: rgb(7, 107, 45);
+
+    }
 }
 
-.menuPalette h2 {
-    background: linear-gradient(to right, rgb(7, 107, 45) 0%, #00ff00 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+.carte {
 
-.menuPalette a {
-   color: rgb(7, 107, 45);
-}
+    .carteNote {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        flex: 1;
+        width: 700px;
+        margin-bottom: 30px;
+    }
 
-.carte .carteNote {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    flex: 1;
-    width: 700px;
-    margin-bottom: 30px;
-}
+    .cartePalette {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        flex: 1;
+        width: 700px;
+        margin-bottom: 30px;
+    }
 
-.carte .cartePalette {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    flex: 1;
-    width: 700px;
-    margin-bottom: 30px;
-}
+    .carteChic {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        flex: 1;
+        width: 700px;
+        margin-bottom: 30px;
+    }
 
-.carte .carteChic {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    flex: 1;
-    width: 700px;
-    margin-bottom: 30px;
-}
+    .carteDelice {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        flex: 1;
+        width: 700px;
+        margin-bottom: 30px;
+    }
 
-.carte .carteDelice {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    flex: 1;
-    width: 700px;
-    margin-bottom: 30px;
-}
+    h2 {
+        font-size: 2em;
+    }
 
-.carte h2 {
-    font-size: 2em;
-}
+    h3 {
+        margin-top: 100px;
+        font-size: 2em;
+    }
 
-.carte h3 {
-    margin-top: 100px;
-    font-size: 2em;
-}
+    h4 {
+        font-size: 1.1em;
+    }
 
-.carte h4 {
-    font-size: 1.1em;
-}
-
-.carte h5 {
-    font-size: 1.2em;
+    h5 {
+        font-size: 1.2em;
+    }
 }
 
 .puceInfos {
@@ -345,484 +345,37 @@ footer {
     }
 }
 
-.menuNote .entrees {
+.menuNote, .menuChic, .menuDelice, .menuPalette .entrees, .plats, .desserts {
     text-align: center;
-}
-
-.menuNote .entrees span {
-    display: inline-block;
-    position: relative;
-}
-
-.menuNote .entrees span:before,
-.menuNote .entrees span:after {
-    content: "";
-    position: absolute;
-    height: 0px;
-    border: 2px solid rgb(0, 0, 0);
-    top: 0;
-    width: 255%;
-}
-
-.menuNote .entrees span:before {
-    right: 100%;
-    margin-right: 50px;
-    margin-top: 13px;
-    border: solid 3px rgb(0, 0, 0);
-    box-shadow: 20px 38px 34px -26px rgb(0, 0, 0);
-    border-radius: 30% 40% 80% 90%;
-
-}
-
-.menuNote .entrees span:after {
-    left: 100%;
-    margin-left: 50px;
-    margin-top: 13px;
-
-    border: solid 3px rgb(0, 0, 0);
-    box-shadow: 20px 38px 34px -26px rgb(0, 0, 0);
-    border-radius: 40% 50% 10% 40%;
-
-}
-
-.menuNote .plats {
-    text-align: center;
-}
-
-.menuNote .plats span {
-    display: inline-block;
-    position: relative;
-}
-
-.menuNote .plats span:before,
-.menuNote .plats span:after {
-    content: "";
-    position: absolute;
-    height: 0px;
-    border: 2px solid #41403E;
-    box-shadow: 0px 1px 5px black;
-    top: 0;
-    width: 150%;
-}
-
-.menuNote .plats span:before {
-    right: 100%;
-    margin-right: 50px;
-    margin-top: 13px;
-
-    border: solid 3px rgb(0, 0, 0);
-    box-shadow: 20px 38px 34px -26px rgb(0, 0, 0);
-    border-radius: 30% 40% 80% 40%;
-}
-
-.menuNote .plats span:after {
-    left: 100%;
-    margin-left: 50px;
-    margin-top: 13px;
-
-    border: solid 3px rgb(0, 0, 0);
-    box-shadow: 20px 38px 34px -26px rgb(0, 0, 0);
-    border-radius: 40% 50% 10% 40%;
-}
-
-.menuNote .desserts {
-    text-align: center;
-}
-
-.menuNote .desserts span {
-    display: inline-block;
-    position: relative;
-}
-
-.menuNote .desserts span:before,
-.menuNote .desserts span:after {
-    content: "";
-    position: absolute;
-    height: 0px;
-    border: 2px solid rgb(0, 0, 0);
-    box-shadow: 0px 1px 5px black;
-    top: 0;
-    width: 100%;
-}
-
-.menuNote .desserts span:before {
-    right: 100%;
-    margin-right: 50px;
-    margin-top: 13px;
-
-    border: solid 3px rgb(0, 0, 0);
-    box-shadow: 20px 38px 34px -26px rgb(0, 0, 0);
-    border-radius: 30% 40% 80% 40%;
-}
-
-.menuNote .desserts span:after {
-    left: 100%;
-    margin-left: 50px;
-    margin-top: 13px;
-
-    border: solid 3px rgb(0, 0, 0);
-    box-shadow: 20px 38px 34px -26px rgb(0, 0, 0);
-    border-radius: 40% 50% 10% 40%;
-}
-
-.menuPalette .entrees {
-    text-align: center;
-}
-
-.menuPalette .entrees span {
-    display: inline-block;
-    position: relative;
-}
-
-.menuPalette .entrees span:before,
-.menuPalette .entrees span:after {
-    content: "";
-    position: absolute;
-    height: 0px;
-    border: 2px solid rgb(0, 0, 0);
-    top: 0;
-    width: 255%;
-}
-
-.menuPalette .entrees span:before {
-    right: 100%;
-    margin-right: 50px;
-    margin-top: 13px;
-    border: solid 3px rgb(0, 0, 0);
-    box-shadow: 20px 38px 34px -26px rgb(0, 0, 0);
-    border-radius: 30% 40% 80% 90%;
-
-}
-
-.menuPalette .entrees span:after {
-    left: 100%;
-    margin-left: 50px;
-    margin-top: 13px;
-
-    border: solid 3px rgb(0, 0, 0);
-    box-shadow: 20px 38px 34px -26px rgb(0, 0, 0);
-    border-radius: 40% 50% 10% 40%;
-
-}
-
-.menuPalette .plats {
-    text-align: center;
-}
-
-.menuPalette .plats span {
-    display: inline-block;
-    position: relative;
-}
-
-.menuPalette .plats span:before,
-.menuPalette .plats span:after {
-    content: "";
-    position: absolute;
-    height: 0px;
-    border: 2px solid #41403E;
-    box-shadow: 0px 1px 5px black;
-    top: 0;
-    width: 150%;
-}
-
-.menuPalette .plats span:before {
-    right: 100%;
-    margin-right: 50px;
-    margin-top: 13px;
-
-    border: solid 3px rgb(0, 0, 0);
-    box-shadow: 20px 38px 34px -26px rgb(0, 0, 0);
-    border-radius: 30% 40% 80% 40%;
-}
-
-.menuPalette .plats span:after {
-    left: 100%;
-    margin-left: 50px;
-    margin-top: 13px;
-
-    border: solid 3px rgb(0, 0, 0);
-    box-shadow: 20px 38px 34px -26px rgb(0, 0, 0);
-    border-radius: 40% 50% 10% 40%;
-}
-
-.menuPalette .desserts {
-    text-align: center;
-}
-
-.menuPalette .desserts span {
-    display: inline-block;
-    position: relative;
-}
-
-.menuPalette .desserts span:before,
-.menuPalette .desserts span:after {
-    content: "";
-    position: absolute;
-    height: 0px;
-    border: 2px solid rgb(0, 0, 0);
-    box-shadow: 0px 1px 5px black;
-    top: 0;
-    width: 100%;
-}
-
-.menuPalette .desserts span:before {
-    right: 100%;
-    margin-right: 50px;
-    margin-top: 13px;
-
-    border: solid 3px rgb(0, 0, 0);
-    box-shadow: 20px 38px 34px -26px rgb(0, 0, 0);
-    border-radius: 30% 40% 80% 40%;
-}
-
-.menuPalette .desserts span:after {
-    left: 100%;
-    margin-left: 50px;
-    margin-top: 13px;
-
-    border: solid 3px rgb(0, 0, 0);
-    box-shadow: 20px 38px 34px -26px rgb(0, 0, 0);
-    border-radius: 40% 50% 10% 40%;
-}
-
-.menuChic .entrees {
-    text-align: center;
-}
-
-.menuChic .entrees span {
-    display: inline-block;
-    position: relative;
-}
-
-.menuChic .entrees span:before,
-.menuChic .entrees span:after {
-    content: "";
-    position: absolute;
-    height: 0px;
-    border: 2px solid rgb(0, 0, 0);
-    top: 0;
-    width: 255%;
-}
-
-.menuChic .entrees span:before {
-    right: 100%;
-    margin-right: 50px;
-    margin-top: 13px;
-    border: solid 3px rgb(0, 0, 0);
-    box-shadow: 20px 38px 34px -26px rgb(0, 0, 0);
-    border-radius: 30% 40% 80% 90%;
-
-}
-
-.menuChic .entrees span:after {
-    left: 100%;
-    margin-left: 50px;
-    margin-top: 13px;
-
-    border: solid 3px rgb(0, 0, 0);
-    box-shadow: 20px 38px 34px -26px rgb(0, 0, 0);
-    border-radius: 40% 50% 10% 40%;
-
-}
-
-.menuChic .plats {
-    text-align: center;
-}
-
-.menuChic .plats span {
-    display: inline-block;
-    position: relative;
-}
-
-.menuChic .plats span:before,
-.menuChic .plats span:after {
-    content: "";
-    position: absolute;
-    height: 0px;
-    border: 2px solid #41403E;
-    box-shadow: 0px 1px 5px black;
-    top: 0;
-    width: 150%;
-}
-
-.menuChic .plats span:before {
-    right: 100%;
-    margin-right: 50px;
-    margin-top: 13px;
-
-    border: solid 3px rgb(0, 0, 0);
-    box-shadow: 20px 38px 34px -26px rgb(0, 0, 0);
-    border-radius: 30% 40% 80% 40%;
-}
-
-.menuChic .plats span:after {
-    left: 100%;
-    margin-left: 50px;
-    margin-top: 13px;
-
-    border: solid 3px rgb(0, 0, 0);
-    box-shadow: 20px 38px 34px -26px rgb(0, 0, 0);
-    border-radius: 40% 50% 10% 40%;
-}
-
-.menuChic .desserts {
-    text-align: center;
-}
-
-.menuChic .desserts span {
-    display: inline-block;
-    position: relative;
-}
-
-.menuChic .desserts span:before,
-.menuChic .desserts span:after {
-    content: "";
-    position: absolute;
-    height: 0px;
-    border: 2px solid rgb(0, 0, 0);
-    box-shadow: 0px 1px 5px black;
-    top: 0;
-    width: 100%;
-}
-
-.menuChic .desserts span:before {
-    right: 100%;
-    margin-right: 50px;
-    margin-top: 13px;
-
-    border: solid 3px rgb(0, 0, 0);
-    box-shadow: 20px 38px 34px -26px rgb(0, 0, 0);
-    border-radius: 30% 40% 80% 40%;
-}
-
-.menuChic .desserts span:after {
-    left: 100%;
-    margin-left: 50px;
-    margin-top: 13px;
-
-    border: solid 3px rgb(0, 0, 0);
-    box-shadow: 20px 38px 34px -26px rgb(0, 0, 0);
-    border-radius: 40% 50% 10% 40%;
-}
-
-.menuDelice .entrees {
-    text-align: center;
-}
-
-.menuDelice .entrees span {
-    display: inline-block;
-    position: relative;
-}
-
-.menuDelice .entrees span:before,
-.menuDelice .entrees span:after {
-    content: "";
-    position: absolute;
-    height: 0px;
-    border: 2px solid rgb(0, 0, 0);
-    top: 0;
-    width: 255%;
-}
-
-.menuDelice .entrees span:before {
-    right: 100%;
-    margin-right: 50px;
-    margin-top: 13px;
-    border: solid 3px rgb(0, 0, 0);
-    box-shadow: 20px 38px 34px -26px rgb(0, 0, 0);
-    border-radius: 30% 40% 80% 90%;
-
-}
-
-.menuDelice .entrees span:after {
-    left: 100%;
-    margin-left: 50px;
-    margin-top: 13px;
-
-    border: solid 3px rgb(0, 0, 0);
-    box-shadow: 20px 38px 34px -26px rgb(0, 0, 0);
-    border-radius: 40% 50% 10% 40%;
-
-}
-
-.menuDelice .plats {
-    text-align: center;
-}
-
-.menuDelice .plats span {
-    display: inline-block;
-    position: relative;
-}
-
-.menuDelice .plats span:before,
-.menuDelice .plats span:after {
-    content: "";
-    position: absolute;
-    height: 0px;
-    border: 2px solid #41403E;
-    box-shadow: 0px 1px 5px black;
-    top: 0;
-    width: 150%;
-}
-
-.menuDelice .plats span:before {
-    right: 100%;
-    margin-right: 50px;
-    margin-top: 13px;
-
-    border: solid 3px rgb(0, 0, 0);
-    box-shadow: 20px 38px 34px -26px rgb(0, 0, 0);
-    border-radius: 30% 40% 80% 40%;
-}
-
-.menuDelice .plats span:after {
-    left: 100%;
-    margin-left: 50px;
-    margin-top: 13px;
-
-    border: solid 3px rgb(0, 0, 0);
-    box-shadow: 20px 38px 34px -26px rgb(0, 0, 0);
-    border-radius: 40% 50% 10% 40%;
-}
-
-.menuDelice .desserts {
-    text-align: center;
-}
-
-.menuDelice .desserts span {
-    display: inline-block;
-    position: relative;
-}
-
-.menuDelice .desserts span:before,
-.menuDelice .desserts span:after {
-    content: "";
-    position: absolute;
-    height: 0px;
-    border: 2px solid rgb(0, 0, 0);
-    box-shadow: 0px 1px 5px black;
-    top: 0;
-    width: 100%;
-}
-
-.menuDelice .desserts span:before {
-    right: 100%;
-    margin-right: 50px;
-    margin-top: 13px;
-
-    border: solid 3px rgb(0, 0, 0);
-    box-shadow: 20px 38px 34px -26px rgb(0, 0, 0);
-    border-radius: 30% 40% 80% 40%;
-}
-
-.menuDelice .desserts span:after {
-    left: 100%;
-    margin-left: 50px;
-    margin-top: 13px;
-
-    border: solid 3px rgb(0, 0, 0);
-    box-shadow: 20px 38px 34px -26px rgb(0, 0, 0);
-    border-radius: 40% 50% 10% 40%;
+    span {
+        display: inline-block;
+        position: relative;
+        &:before, &:after {
+            content: "";
+            position: absolute;
+            height: 0px;
+            border: 2px solid rgb(0, 0, 0);
+            top: 0;
+            width: -webkit-fill-available;
+        }
+        &:before {
+            right: 100%;
+            margin-right: 50px;
+            margin-top: 13px;
+            border: solid 3px rgb(0, 0, 0);
+            box-shadow: 20px 38px 34px -26px rgb(0, 0, 0);
+            border-radius: 30% 40% 80% 90%;
+        }
+        &:after {
+            left: 100%;
+            margin-left: 50px;
+            margin-top: 13px;
+        
+            border: solid 3px rgb(0, 0, 0);
+            box-shadow: 20px 38px 34px -26px rgb(0, 0, 0);
+            border-radius: 40% 50% 10% 40%;
+        }
+    }
 }
 
 .title {
@@ -861,134 +414,7 @@ footer {
         margin: 0 0 20px 0;
     }
 
-    .menuNote .entrees span:before,
-    .menuNote .entrees span:after {
-        content: "";
-        position: absolute;
-        height: 0px;
-        border: 2px solid rgb(0, 0, 0);
-        top: 0;
-        width: 100%;
-
-    }
-
-    .menuNote .plats span:before,
-    .menuNote .plats span:after {
-        content: "";
-        position: absolute;
-        height: 0px;
-        border: 2px solid rgb(0, 0, 0);
-        top: 0;
-        width: 50%;
-
-    }
-
-    .menuNote .desserts span:before,
-    .menuNote .desserts span:after {
-        content: "";
-        position: absolute;
-        height: 0px;
-        border: 2px solid rgb(0, 0, 0);
-        top: 0;
-        width: 30%;
-    }
-
-    .menuPalette .entrees span:before,
-    .menuPalette .entrees span:after {
-        content: "";
-        position: absolute;
-        height: 0px;
-        border: 2px solid rgb(0, 0, 0);
-        top: 0;
-        width: 100%;
-
-    }
-
-    .menuPalette .plats span:before,
-    .menuPalette .plats span:after {
-        content: "";
-        position: absolute;
-        height: 0px;
-        border: 2px solid rgb(0, 0, 0);
-        top: 0;
-        width: 50%;
-
-    }
-
-    .menuPalette .desserts span:before,
-    .menuPalette .desserts span:after {
-        content: "";
-        position: absolute;
-        height: 0px;
-        border: 2px solid rgb(0, 0, 0);
-        top: 0;
-        width: 30%;
-    }
-
-    .menuChic .entrees span:before,
-    .menuChic .entrees span:after {
-        content: "";
-        position: absolute;
-        height: 0px;
-        border: 2px solid rgb(0, 0, 0);
-        top: 0;
-        width: 100%;
-
-    }
-
-    .menuChic .plats span:before,
-    .menuChic .plats span:after {
-        content: "";
-        position: absolute;
-        height: 0px;
-        border: 2px solid rgb(0, 0, 0);
-        top: 0;
-        width: 50%;
-
-    }
-
-    .menuChic .desserts span:before,
-    .menuChic .desserts span:after {
-        content: "";
-        position: absolute;
-        height: 0px;
-        border: 2px solid rgb(0, 0, 0);
-        top: 0;
-        width: 30%;
-    }
-
-    .menuDelice .entrees span:before,
-    .menuDelice .entrees span:after {
-        content: "";
-        position: absolute;
-        height: 0px;
-        border: 2px solid rgb(0, 0, 0);
-        top: 0;
-        width: 100%;
-
-    }
-
-    .menuDelice .plats span:before,
-    .menuDelice .plats span:after {
-        content: "";
-        position: absolute;
-        height: 0px;
-        border: 2px solid rgb(0, 0, 0);
-        top: 0;
-        width: 50%;
-
-    }
-
-    .menuDelice .desserts span:before,
-    .menuDelice .desserts span:after {
-        content: "";
-        position: absolute;
-        height: 0px;
-        border: 2px solid rgb(0, 0, 0);
-        top: 0;
-        width: 30%;
-    }
-
+    
 
     .prix {
         margin-left: 10px;
@@ -996,14 +422,14 @@ footer {
         align-self: flex-end;
     }
 
-@media all and (max-width: 425px){
+    @media all and (max-width: 425px) {
 
-    .incoming{
-        font-size: 2em;
+        .incoming {
+            font-size: 2em;
+        }
+
+        footer {
+            padding: 0;
+        }
     }
-
-footer {
-    padding: 0;
-}
-}
 }
