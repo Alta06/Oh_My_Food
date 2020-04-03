@@ -38,23 +38,40 @@ h1 {
     align-items: center;
     justify-content: center;
     display: flex;
+
+    h2 {
+        font-size: 2em;
+    }
+
+    h3 {
+        margin-top: 40px;
+        font-size: 2em;
+    }
+
+    h4 {
+        font-size: 1.1em;
+    }
+
+    h5 {
+        font-size: 1.2em;
+    }
 }
 
 .content {
-    width: 70%;
+    width: 60%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 25px;
+    a {
+        font-size: 1em;
+
+    }
 }
 
 a {
     text-decoration: none;
     color: $clrTitle;
-}
-
-.content a {
-    font-size: 1em;
 }
 
 footer a {
@@ -63,7 +80,7 @@ footer a {
 
     &:hover {
         animation: wiggle 0.5s;
-        animation-iteration-count: infinite;
+        animation-iteration-count: 2;
 
         @keyframes wiggle {
             0% {
@@ -133,8 +150,13 @@ footer a {
     display: flex;
 }
 
+.prix {
+    font-weight: bold;
+    padding-left: 100px;
+}
+
 .menuNote {
-    background-color: #FCDFDB;
+    background-color: rgba(252, 223, 219, 0.404);
     font-family: 'Dancing Script', cursive;
     font-size: 1.3em;
     box-shadow: rgb(224, 224, 224) 0px 0px 10px 1px;
@@ -171,7 +193,7 @@ h5 .fas {
 }
 
 .menuChic {
-    background-color: rgb(248, 228, 246);
+    background-color: rgba(248, 228, 246, 0.651);
     font-family: 'Handlee', cursive;
     font-size: 1.3em;
     box-shadow: rgb(224, 224, 224) 0px 0px 10px 1px;
@@ -190,7 +212,7 @@ h5 .fas {
 }
 
 .menuDelice {
-    background-color: #F9F9F9;
+    background-color: rgba(226, 219, 173, 0.301);
     font-family: 'Gotu', sans-serif;
     font-size: 1.3em;
     box-shadow: rgb(224, 224, 224) 0px 0px 10px 1px;
@@ -199,15 +221,16 @@ h5 .fas {
         background: linear-gradient(to right, rgb(0, 70, 175) 0%, #4c85ff 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+    }
 
-        a {
-            color: rgb(0, 70, 175);
-        }
+    a {
+        color: rgb(0, 70, 175);
     }
 }
 
+
 .menuPalette {
-    background-color: #FDFFFD;
+    background-color: rgba(253, 255, 253, 0.568);
     font-size: 1.3em;
     box-shadow: rgb(224, 224, 224) 0px 0px 10px 1px;
 
@@ -220,34 +243,6 @@ h5 .fas {
     a {
         color: rgb(7, 107, 45);
 
-    }
-}
-
-.carte {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    flex: 1;
-    margin-bottom: 30px;
-}
-
-.carte {
-
-    h2 {
-        font-size: 2em;
-    }
-
-    h3 {
-        margin-top: 100px;
-        font-size: 2em;
-    }
-
-    h4 {
-        font-size: 1.1em;
-    }
-
-    h5 {
-        font-size: 1.2em;
     }
 }
 
@@ -284,6 +279,13 @@ footer {
     width: 70px;
     text-align: center;
 
+    .bounce1 {
+        animation-delay: -0.32s;
+    }
+
+    .bounce2 {
+        animation-delay: -0.16s;
+    }
 
     div {
         width: 15px;
@@ -292,19 +294,7 @@ footer {
 
         border-radius: 100%;
         display: inline-block;
-        -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
-        animation: sk-bouncedelay 1.4s infinite ease-in-out both;
-    }
-}
-
-.spinner {
-
-    .bounce1 {
-        animation-delay: -0.32s;
-    }
-
-    .bounce2 {
-        animation-delay: -0.16s;
+        animation: sk-bouncedelay 1.2s infinite ease-in-out both;
     }
 }
 
@@ -317,7 +307,7 @@ footer {
     }
 
     40% {
-        transform: translateY(10.0px);
+        transform: translateY(-10.0px);
     }
 }
 
@@ -399,10 +389,10 @@ span:before,
 
     .prix {
         margin-left: 10px;
+        padding: 0;
         justify-content: center;
         align-self: flex-end;
     }
-
 }
 
 @media all and (max-width: 425px) {
@@ -410,6 +400,10 @@ span:before,
     .carte h3 {
         margin-top: 20px;
         font-size: 1.5em;
+    }
+
+    .puceInfos {
+        padding-bottom: 25px;
     }
 
     .incoming {
