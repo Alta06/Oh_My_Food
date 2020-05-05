@@ -31,6 +31,7 @@ h1 {
     padding: 20px;
 }
 
+
 .carte {
     margin: auto;
     flex-direction: column;
@@ -57,17 +58,11 @@ h1 {
     }
 }
 
-.content {
-    width: 60%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 25px;
     a {
         font-size: 1em;
 
     }
-}
+
 
 a {
     text-decoration: none;
@@ -136,21 +131,25 @@ footer a {
     width: 350px;
     min-height: 450px;
     justify-content: center;
-    margin: 0 40px 40px 0;
+    margin: auto;
+    margin-bottom: 35px;
+
     box-shadow: rgb(224, 224, 224) 0px 0px 10px 1px;
-    transform: scale(1);
     transition: ease-in-out 500ms;
 
-    &:hover {
+    a {
+        transition: ease-in-out 500ms;
+    }
+
+    &:hover{
         opacity: 0.5;
-        transform: scale(1.4)  ;
+        a {
+            transform: scale(1.2);
+        }
     }
 }
 
-.menuTop,
-.menuBot {
-    display: flex;
-}
+
 
 .prix {
     font-weight: bold;
@@ -213,7 +212,7 @@ h5 .fas {
     }
 }
 
-.menuDelice {
+.menuDelice{
     background-color: rgba(226, 219, 173, 0.301);
     font-family: 'Gotu', sans-serif;
     font-size: 1.3em;
@@ -279,7 +278,6 @@ footer {
 
 .spinner {
     width: 70px;
-    text-align: center;
 
     .bounce1 {
         animation-delay: -0.32s;
@@ -290,9 +288,9 @@ footer {
     }
 
     div {
-        width: 15px;
-        height: 15px;
-        background-color: #333;
+        width: 8px;
+        height: 8px;
+        background-color: $clrTitle;
         border-radius: 100%;
         display: inline-block;
         animation: sk-bouncedelay 1.2s infinite ease-in-out both;
@@ -379,15 +377,6 @@ span:before,
 
 @media all and (max-width: 768px) {
 
-    .menuTop,
-    .menuBot {
-        flex-direction: column;
-    }
-
-    .menu {
-        margin: 0 0 20px 0;
-    }
-
     .prix {
         margin-left: 10px;
         padding: 0;
@@ -397,6 +386,19 @@ span:before,
 }
 
 @media all and (max-width: 425px) {
+
+ 
+    .menu {
+        width: 300px;
+    }
+
+    .carte li  {
+        flex-direction: column;
+        p {
+            align-self: auto;
+            margin: 0;
+        }
+    }
 
     .carte h3 {
         margin-top: 20px;
@@ -409,10 +411,16 @@ span:before,
 
     .incoming {
         font-size: 2em;
+        width: 300px;
+        margin-bottom: 30px;
     }
 
     footer {
         padding: 0;
+        flex-direction: column;
+        a {
+            margin: auto auto 10px ;
+        }
     }
 
     span:before,

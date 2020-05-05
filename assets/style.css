@@ -74,20 +74,7 @@ h1 {
   font-size: 1.2em;
 }
 
-.content {
-  width: 60%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 25px;
-}
-
-.content a {
+a {
   font-size: 1em;
 }
 
@@ -215,26 +202,26 @@ footer a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0 40px 40px 0;
+  margin: auto;
+  margin-bottom: 35px;
   -webkit-box-shadow: #e0e0e0 0px 0px 10px 1px;
           box-shadow: #e0e0e0 0px 0px 10px 1px;
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  -webkit-transition: ease-in-out 500ms;
+  transition: ease-in-out 500ms;
+}
+
+.menu a {
   -webkit-transition: ease-in-out 500ms;
   transition: ease-in-out 500ms;
 }
 
 .menu:hover {
   opacity: 0.5;
-  -webkit-transform: scale(1.4);
-          transform: scale(1.4);
 }
 
-.menuTop,
-.menuBot {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.menu:hover a {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .prix {
@@ -389,7 +376,6 @@ footer {
 
 .spinner {
   width: 70px;
-  text-align: center;
 }
 
 .spinner .bounce1 {
@@ -403,9 +389,9 @@ footer {
 }
 
 .spinner div {
-  width: 15px;
-  height: 15px;
-  background-color: #333;
+  width: 8px;
+  height: 8px;
+  background-color: #FCCA46;
   border-radius: 100%;
   display: inline-block;
   -webkit-animation: sk-bouncedelay 1.2s infinite ease-in-out both;
@@ -532,16 +518,6 @@ span:before,
 }
 
 @media all and (max-width: 768px) {
-  .menuTop,
-  .menuBot {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .menu {
-    margin: 0 0 20px 0;
-  }
   .prix {
     margin-left: 10px;
     padding: 0;
@@ -554,6 +530,21 @@ span:before,
 }
 
 @media all and (max-width: 425px) {
+  .menu {
+    width: 300px;
+  }
+  .carte li {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .carte li p {
+    -ms-flex-item-align: auto;
+        -ms-grid-row-align: auto;
+        align-self: auto;
+    margin: 0;
+  }
   .carte h3 {
     margin-top: 20px;
     font-size: 1.5em;
@@ -563,9 +554,18 @@ span:before,
   }
   .incoming {
     font-size: 2em;
+    width: 300px;
+    margin-bottom: 30px;
   }
   footer {
     padding: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer a {
+    margin: auto auto 10px;
   }
   span:before,
   :after {
