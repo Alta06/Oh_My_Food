@@ -138,10 +138,12 @@ footer a {
     justify-content: center;
     margin: 0 40px 40px 0;
     box-shadow: rgb(224, 224, 224) 0px 0px 10px 1px;
+    transform: scale(1);
     transition: ease-in-out 500ms;
 
     &:hover {
-        transform: scale(1.4, );
+        opacity: 0.5;
+        transform: scale(1.4)  ;
     }
 }
 
@@ -291,7 +293,6 @@ footer {
         width: 15px;
         height: 15px;
         background-color: #333;
-
         border-radius: 100%;
         display: inline-block;
         animation: sk-bouncedelay 1.2s infinite ease-in-out both;
