@@ -421,6 +421,8 @@ span:before,
         width: 300px;
     }
 
+    
+
     .carte li  {
         flex-direction: column;
         p {
@@ -443,6 +445,9 @@ span:before,
         font-size: 2em;
         width: 300px;
         margin-bottom: 30px;
+        h2 {
+            font-size: 1em;
+        }
     }
 
     footer {

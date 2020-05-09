@@ -601,6 +601,9 @@ span:before,
     width: 300px;
     margin-bottom: 30px;
   }
+  .incoming h2 {
+    font-size: 1em;
+  }
   footer {
     padding: 0;
     -webkit-box-orient: vertical;
