@@ -194,7 +194,6 @@ h1 {
 }
 
 .incoming {
-  font-size: 2em;
   color: #FCCA46;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -209,6 +208,11 @@ h1 {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 15px;
+}
+
+.incoming h2 {
+  font-size: 2em;
+  font-weight: lighter;
 }
 
 .incoming .bouncer {
