@@ -76,7 +76,7 @@ h1 {
 }
 
 .menu:hover {
-  opacity: 0.7;
+  opacity: .6;
 }
 
 .menu:hover a {
@@ -85,7 +85,7 @@ h1 {
 }
 
 .menuNote {
-  background-color: rgba(252, 223, 219, 0.404);
+  background-color: rgba(252, 223, 219, 0.8);
   font-family: 'Dancing Script', cursive;
   font-size: 1.2em;
   -webkit-box-shadow: #e0e0e0 0px 0px 10px 1px;
@@ -137,7 +137,7 @@ h1 {
 }
 
 .menuChic {
-  background-color: rgba(248, 228, 246, 0.651);
+  background-color: rgba(248, 228, 246, 0.8);
   font-family: 'Handlee', cursive;
   font-size: 1.3em;
   -webkit-box-shadow: #e0e0e0 0px 0px 10px 1px;
@@ -157,7 +157,7 @@ h1 {
 }
 
 .menuDelice {
-  background-color: rgba(226, 219, 173, 0.301);
+  background-color: rgba(226, 219, 173, 0.5);
   font-family: 'Gotu', sans-serif;
   font-size: 1.2em;
   -webkit-box-shadow: #e0e0e0 0px 0px 10px 1px;
