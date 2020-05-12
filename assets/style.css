@@ -76,7 +76,7 @@ h1 {
 }
 
 .menu:hover {
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 .menu:hover a {
@@ -433,8 +433,8 @@ a {
   color: #FCCA46;
 }
 
-span:before,
-:after {
+span::before,
+::after {
   width: 150px;
 }
 
@@ -457,17 +457,17 @@ span:before,
   position: relative;
 }
 
-.menuNote span:before, .menuNote span:after,
-.menuChic span:before,
-.menuChic span:after,
-.menuDelice span:before,
-.menuDelice span:after,
-.menuPalette .entrees span:before,
-.menuPalette .entrees span:after,
-.plats span:before,
-.plats span:after,
-.desserts span:before,
-.desserts span:after {
+.menuNote span::before, .menuNote span::after,
+.menuChic span::before,
+.menuChic span::after,
+.menuDelice span::before,
+.menuDelice span::after,
+.menuPalette .entrees span::before,
+.menuPalette .entrees span::after,
+.plats span::before,
+.plats span::after,
+.desserts span::before,
+.desserts span::after {
   content: "";
   position: absolute;
   height: 0px;
@@ -475,12 +475,12 @@ span:before,
   top: 0;
 }
 
-.menuNote span:before,
-.menuChic span:before,
-.menuDelice span:before,
-.menuPalette .entrees span:before,
-.plats span:before,
-.desserts span:before {
+.menuNote span::before,
+.menuChic span::before,
+.menuDelice span::before,
+.menuPalette .entrees span::before,
+.plats span::before,
+.desserts span::before {
   right: 100%;
   margin: 13px 15px 0 25px;
   border: solid 3px black;
@@ -489,12 +489,12 @@ span:before,
   border-radius: 30% 40% 80% 90%;
 }
 
-.menuNote span:after,
-.menuChic span:after,
-.menuDelice span:after,
-.menuPalette .entrees span:after,
-.plats span:after,
-.desserts span:after {
+.menuNote span::after,
+.menuChic span::after,
+.menuDelice span::after,
+.menuPalette .entrees span::after,
+.plats span::after,
+.desserts span::after {
   left: 100%;
   margin: 13px 25px 0 15px;
   border: solid 3px black;
@@ -508,7 +508,7 @@ span:before,
   margin: auto;
 }
 
-.carte h4:after {
+.carte h4::after {
   content: '';
   display: block;
   border-bottom: 3px solid black;
@@ -522,7 +522,7 @@ span:before,
   transition: 700ms ease-in-out;
 }
 
-.carte h4:hover:after {
+.carte h4:hover::after {
   width: 100px;
 }
 
@@ -618,11 +618,11 @@ span:before,
   footer a {
     margin: auto auto 10px;
   }
-  span:before,
-  :after {
+  span::before,
+  ::after {
     width: 50px;
   }
-  .desserts span:before,
+  .desserts span::before,
   ::after {
     width: 35px;
   }

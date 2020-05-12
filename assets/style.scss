@@ -47,18 +47,20 @@ h1 {
     margin: 25px 0 ;
     box-shadow: rgb(224, 224, 224) 0px 0px 10px 1px;
     transition: ease-in-out 500ms;
-
     a {
         transition: ease-in-out 500ms;
     }
 
     &:hover{
-        opacity: 0.5;
+        opacity: 0.7;
         a {
             transform: scale(1.2);
         }
+      
+    
     }
 }
+
 
 .menuNote {
     background-color: rgba(252, 223, 219, 0.404);
@@ -316,8 +318,8 @@ a {
     color: $clrTitle;
 }
 
-span:before,
-:after {
+span::before,
+::after {
     width: 150px;
 }
 
@@ -333,8 +335,8 @@ span:before,
         display: inline-block;
         position: relative;
 
-        &:before,
-        &:after {
+        &::before,
+        &::after {
             content: "";
             position: absolute;
             height: 0px;
@@ -342,7 +344,7 @@ span:before,
             top: 0;
         }
 
-        &:before {
+        &::before {
             right: 100%;
             margin: 13px 15px 0 25px;
             border: solid 3px rgb(0, 0, 0);
@@ -350,7 +352,7 @@ span:before,
             border-radius: 30% 40% 80% 90%;
         }
 
-        &:after {
+        &::after {
             left: 100%;
             margin: 13px 25px 0 15px;
             border: solid 3px rgb(0, 0, 0);
@@ -365,7 +367,7 @@ span:before,
     margin: auto;
 }
 
-.carte h4:after {
+.carte h4::after {
     content: '';
     display: block;
     border-bottom: 3px solid rgb(0, 0, 0);
@@ -377,7 +379,7 @@ span:before,
     transition: 700ms ease-in-out;
 }
 
-.carte h4:hover:after {
+.carte h4:hover::after {
     width: 100px;
 }
 
@@ -463,12 +465,12 @@ span:before,
         }
     }
 
-    span:before,
-    :after {
+    span::before,
+    ::after {
         width: 50px;
     }
 
-    .desserts span:before,
+    .desserts span::before,
     ::after {
         width: 35px;
     }
