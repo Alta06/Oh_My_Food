@@ -4,7 +4,7 @@ body {
   padding: 0;
 }
 
-header {
+.topHeader {
   background-color: #579C87;
   text-align: center;
   color: #FCCA46;
@@ -14,6 +14,11 @@ header {
 
 h1 {
   margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #FCCA46;
 }
 
 .container {
@@ -124,7 +129,7 @@ h1 {
   background-image: -webkit-gradient(linear, left top, right top, from(red), to(#ff9900));
   background-image: linear-gradient(to right, red 0%, #ff9900 100%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 
 .menuNote h2 .fas {
@@ -139,7 +144,7 @@ h1 {
 .menuChic {
   background-color: rgba(248, 228, 246, 0.8);
   font-family: 'Handlee', cursive;
-  font-size: 1.3em;
+  font-size: 1.2em;
   -webkit-box-shadow: #e0e0e0 0px 0px 10px 1px;
           box-shadow: #e0e0e0 0px 0px 10px 1px;
   color: #413c37;
@@ -149,7 +154,7 @@ h1 {
   background: -webkit-gradient(linear, left top, right top, color-stop(40%, #8a7d6d), color-stop(60%, #4f0566));
   background: linear-gradient(to right, #8a7d6d 40%, #4f0566 60%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 
 .menuChic a {
@@ -168,7 +173,7 @@ h1 {
   background: -webkit-gradient(linear, left top, right top, from(#0046af), to(#4c85ff));
   background: linear-gradient(to right, #0046af 0%, #4c85ff 100%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 
 .menuDelice a {
@@ -186,7 +191,7 @@ h1 {
   background: -webkit-gradient(linear, left top, right top, from(#076b2d), to(#00ff00));
   background: linear-gradient(to right, #076b2d 0%, #00ff00 100%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 
 .menuPalette a {
@@ -426,11 +431,6 @@ footer a:hover {
 
 a {
   font-size: 1em;
-}
-
-a {
-  text-decoration: none;
-  color: #FCCA46;
 }
 
 span::before,

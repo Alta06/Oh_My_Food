@@ -1,13 +1,23 @@
 $clrTitle:#FCCA46;
 $clrBg: #579C87;
 
+@mixin allMenus {
+    font-size: 1.2em;
+    box-shadow: rgb(224, 224, 224) 0px 0px 10px 1px;
+}
+
+@mixin gradientText {
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
 body {
     font-family: 'Robot', sans-serif;
     margin: 0;
     padding: 0;
 }
 
-header {
+.topHeader {
     background-color: $clrBg;
     text-align: center;
     color: $clrTitle;
@@ -17,6 +27,11 @@ header {
 
 h1 {
     margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: $clrTitle;
 }
 
 .container {
@@ -44,15 +59,16 @@ h1 {
     width: 400px;
     min-height: 450px;
     justify-content: center;
-    margin: 25px 0 ;
+    margin: 25px 0;
     box-shadow: rgb(224, 224, 224) 0px 0px 10px 1px;
     transition: ease-in-out 500ms;
+
     a {
         transition: ease-in-out 500ms;
     }
 
-    &:hover{
-        opacity: .6; 
+    &:hover {
+        opacity: .6;
 
         a {
             transform: scale(1.2);
@@ -60,12 +76,10 @@ h1 {
     }
 }
 
-
 .menuNote {
     background-color: rgba(252, 223, 219, 0.8);
     font-family: 'Dancing Script', cursive;
-    font-size: 1.2em;
-    box-shadow: rgb(224, 224, 224) 0px 0px 10px 1px;
+    @include allMenus();
 
     p {
         font-size: 1.2em;
@@ -89,35 +103,31 @@ h1 {
     .fas {
         font-size: 1.5em;
 
-        &::before{
+        &::before {
             background-image: linear-gradient(to right, rgb(255, 0, 0) 0%, #ff9900 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent; 
+            @include gradientText();
         }
     }
-    
+
     h2 .fas {
         font-size: 1em;
     }
-    
+
     h5 .fas {
         font-size: 1em;
         margin-right: 10px;
-        
     }
 }
 
 .menuChic {
     background-color: rgba(248, 228, 246, 0.8);
     font-family: 'Handlee', cursive;
-    font-size: 1.3em;
-    box-shadow: rgb(224, 224, 224) 0px 0px 10px 1px;
+    @include allMenus();
     color: rgb(65, 60, 55);
 
     h2 {
         background: linear-gradient(to right, rgb(138, 125, 109) 40%, #4f0566 60%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        @include gradientText();
     }
 
     a {
@@ -125,16 +135,14 @@ h1 {
     }
 }
 
-.menuDelice{
+.menuDelice {
     background-color: rgba(226, 219, 173, 0.5);
     font-family: 'Gotu', sans-serif;
-    font-size: 1.2em;
-    box-shadow: rgb(224, 224, 224) 0px 0px 10px 1px;
+    @include allMenus();
 
     h2 {
         background: linear-gradient(to right, rgb(0, 70, 175) 0%, #4c85ff 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        @include gradientText();
     }
 
     a {
@@ -142,16 +150,13 @@ h1 {
     }
 }
 
-
 .menuPalette {
     background-color: rgba(253, 255, 253, 0.568);
-    font-size: 1.2em;
-    box-shadow: rgb(224, 224, 224) 0px 0px 10px 1px;
+    @include allMenus();
 
     h2 {
         background: linear-gradient(to right, rgb(7, 107, 45) 0%, #00ff00 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        @include gradientText();
     }
 
     a {
@@ -176,28 +181,28 @@ h1 {
 
     .bouncer {
         width: 70px;
-    
+
         @keyframes sk-bouncedelay {
-    
+
             0%,
             80%,
             100% {
                 transform: translateY(0);
             }
-        
+
             40% {
                 transform: translateY(-10.0px);
             }
         }
-    
+
         .bounce1 {
             animation-delay: -0.32s;
         }
-    
+
         .bounce2 {
             animation-delay: -0.16s;
         }
-    
+
         div {
             width: 8px;
             height: 8px;
@@ -221,52 +226,52 @@ footer {
     a {
         font-size: 1.5em;
         padding: 0 25px;
-    
+
         &:hover {
             animation: wiggle 0.5s;
             animation-iteration-count: 2;
-    
+
             @keyframes wiggle {
                 0% {
                     transform: translate(1px, 1px) rotate(0deg);
                 }
-    
+
                 10% {
                     transform: translate(-1px, -2px) rotate(-1deg);
                 }
-    
+
                 20% {
                     transform: translate(-3px, 0px) rotate(1deg);
                 }
-    
+
                 30% {
                     transform: translate(3px, 2px) rotate(0deg);
                 }
-    
+
                 40% {
                     transform: translate(1px, -1px) rotate(1deg);
                 }
-    
+
                 50% {
                     transform: translate(-1px, 2px) rotate(-1deg);
                 }
-    
+
                 60% {
                     transform: translate(-3px, 1px) rotate(0deg);
                 }
-    
+
                 70% {
                     transform: translate(3px, 1px) rotate(-1deg);
                 }
-    
+
                 80% {
                     transform: translate(-1px, -1px) rotate(1deg);
                 }
-    
+
                 90% {
                     transform: translate(1px, 2px) rotate(0deg);
                 }
-    
+
                 100% {
                     transform: translate(1px, -2px) rotate(-1deg);
                 }
@@ -305,14 +310,8 @@ footer {
     }
 }
 
-    a {
-        font-size: 1em;
-    }
-
-
 a {
-    text-decoration: none;
-    color: $clrTitle;
+    font-size: 1em;
 }
 
 span::before,
@@ -416,19 +415,18 @@ span::before,
 
 @media all and (max-width: 425px) {
 
-    .content{
+    .content {
         display: flex;
         flex-direction: column;
     }
- 
+
     .menu {
         width: 300px;
     }
 
-    
-
-    .carte li  {
+    .carte li {
         flex-direction: column;
+
         p {
             align-self: auto;
             margin: 0;
@@ -449,6 +447,7 @@ span::before,
         font-size: 2em;
         width: 300px;
         margin-bottom: 30px;
+
         h2 {
             font-size: 1em;
         }
@@ -457,8 +456,9 @@ span::before,
     footer {
         padding: 0;
         flex-direction: column;
+
         a {
-            margin: auto auto 10px ;
+            margin: auto auto 10px;
         }
     }
 
